@@ -13,7 +13,7 @@ To install this theme, follow the steps below:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/akirasz/SerialExperimentalistLain.git
+   git clone https://github.com/Akirasz/SerialExperimentalistLain_Theme
 
 ### 1 - Steps to run the script:
 
@@ -47,7 +47,7 @@ Para instalar este tema, siga os passos abaixo:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu_usuario/SerialExperimentalistLain.git
+   git clone https://github.com/Akirasz/SerialExperimentalistLain_Theme
   
 ### 1 - Passos para executar o script:
 
