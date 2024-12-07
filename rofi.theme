@@ -1,0 +1,14 @@
+$HOME/.config/rofii/theme.rasi
+* {
+    main-bg:            #000000e6;   /* Fundo principal: preto translúcido */
+    main-fg:            #d9d9d9ff;   /* Texto principal: cinza claro */
+    main-br:            #37ebf3ff;   /* Borda: ciano vibrante */
+    main-ex:            #a56df2ff;   /* Elementos de destaque: roxo claro */
+    select-bg:          #fada16ff;   /* Fundo da seleção: amarelo vibrante */
+    select-fg:          #000000ff;   /* Texto da seleção: preto */
+    separatorcolor:     transparent; /* Separadores invisíveis */
+    border-color:       #2cf6b3ff;   /* Borda secundária: ciano brilhante */
+    border-width:       2px;         /* Largura da borda */
+    border-radius:      5px;         /* Bordas arredondadas */
+    padding:            10px;        /* Espaçamento interno */
+}

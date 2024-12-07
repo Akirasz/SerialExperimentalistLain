@@ -1,0 +1,88 @@
+/* Definições de Cores */
+@define-color bar-bg rgba(0, 0, 0, 0.8); /* Fundo da barra com leve transparência */
+@define-color main-bg #141414;        /* Cinza bem escuro - fundo principal */
+@define-color main-fg #D0D0D0;        /* Cinza claro - texto principal */
+
+@define-color wb-act-bg #8A2BE2;      /* Roxo vibrante - fundo dos itens ativos */
+@define-color wb-act-fg #141414;      /* Preto - texto dos itens ativos */
+
+@define-color wb-hvr-bg #5B00B1;      /* Roxo mais claro - fundo ao passar o mouse */
+@define-color wb-hvr-fg #D0D0D0;      /* Cinza claro - texto ao passar o mouse */
+
+@define-color sep-color rgba(255, 255, 255, 0.2); /* Separadores com leve transparência */
+@define-color border-color #8A2BE2;  /* Roxo vibrante - bordas */
+
+
+/* Fundo da barra */
+#waybar {
+    background-color: @bar-bg;
+    color: @main-fg;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave de cor */
+}
+
+/* Botões ativos */
+button.active {
+    background-color: @wb-act-bg;
+    color: @wb-act-fg;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidade */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transição suave */
+}
+
+/* Efeito de hover para botões */
+button:hover {
+    background-color: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra mais forte no hover */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* Transição mais fluida */
+}
+
+/* Efeito de brilho nos itens de hover */
+button:hover {
+    text-shadow: 0 0 5px #8A2BE2, 0 0 10px #8A2BE2, 0 0 20px #8A2BE2; /* Brilho neon nos textos ao passar o mouse */
+}
+
+/* Animação para transições de elementos */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.element-fade-in {
+    animation: fadeIn 0.5s ease-in-out; /* Animação de fade-in */
+}
+
+/* Aplicando a animação nos elementos */
+#waybar .module {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+/* Para módulos de hover, como o relógio e status do sistema */
+#waybar .module:hover {
+    background-color: @wb-hvr-bg;
+    color: @wb-hvr-fg;
+    text-shadow: 0 0 5px #8A2BE2; /* Brilho adicional */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra adicional */
+}
+
+/* Efeito de transição suave para a barra no geral */
+#waybar {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transições de opacidade e movimento */
+}
+
+#waybar.hidden {
+    opacity: 0;
+    transform: translateY(-100%); /* Esconde a barra com movimento */
+}
+
+/* Efeito de foco em ícones ativos */
+#waybar .module:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px #8A2BE2; /* Foco azul com borda luminosa */
+}
+
