@@ -5,9 +5,8 @@ This repository contains the **Serial Experimentalist Lain** theme for **Hyprlan
 
 ## Prerequisites
 
-- **Hyde(optional)**: The theme is designed to be used with *Hyde*, a theme manager for the system.
-- **Linux (Arch Linux with Hyprland recommended)**: The script was developed to run on Linux systems, especially Arch Linux, but can be adapted for other distributions(not tested in others).
-
+- **Hyde(optional)**
+- **Linux (Arch Linux with Hyprland recommended)**
 ## How to install
 
 To install this theme, follow the steps below:
@@ -40,9 +39,8 @@ To install this theme, follow the steps below:
 
 ## Pré-requisitos
 
-- **Hyde**: O tema foi projetado para ser usado com o *Hyde*, um gerenciador de temas para o sistema, mas é opcional.
-- **Linux (Arch Linux com Hyprland recomendado)**: O script foi desenvolvido para ser executado em sistemas Linux, especialmente no Arch Linux, mas pode ser adaptado para outras distribuições(ainda não foi testado).
-
+- **Hyde(opcional)**: 
+- **Linux (Arch Linux com Hyprland recomendado)**
 ## Como instalar
 
 Para instalar este tema, siga os passos abaixo:
